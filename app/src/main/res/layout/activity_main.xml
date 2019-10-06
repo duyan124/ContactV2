@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_search"
+        android:focusable="false"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"></SearchView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    <!--File -> Project Structures -> Dependencies -> add -> search "design" -> choose newest version-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_add_white_24dp"
+            android:layout_margin="16dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </FrameLayout>
+
+</LinearLayout>
